@@ -1,0 +1,9 @@
+.dimensionsImage {
+    width: 24rem;
+    height: 20rem;
+}
+
+.project-image1 {
+    background-image: url(../../images/components\ Images/ourProjects.jpg);
+    height: 200px;
+}

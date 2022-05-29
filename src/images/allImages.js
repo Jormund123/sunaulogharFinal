@@ -38,3 +38,26 @@ export const residental22 = require("../images/residental/Residental22.jpg");
 export const interior1 = require("../images/interior/Interior1.jpeg");
 export const interior2 = require("../images/interior/Interior2.jpeg");
 export const interior3 = require("../images/interior/Interior3.jpeg");
+
+/* teamImages */
+export const team1 = require("../images/teamImages/RajanPandey.jpg");
+export const team2 = require("../images/teamImages/BirajBista.jpg");
+export const team3 = require("../images/teamImages/BikashPanthi.jpeg");
+export const team4 = require("../images/teamImages/RameshPanthi.jpg");
+export const team5 = require("../images/teamImages/JeevanNeupane.JPG");
+export const team6 = require("../images/teamImages/DeepakKumarSingh.jpg");
+export const team7 = require("../images/teamImages/MamataPanthi.jpeg");
+export const team8 = require("../images/teamImages/AkhileshBaniya.jpg");
+export const team9 = require("../images/teamImages/PawanPanthi.jpeg");
+export const team10 = require("../images/teamImages/RajeshAcharya.jpeg");
+export const team11 = require("../images/teamImages/ShankarChapagain.jpg");
+export const team12 = require("../images/teamImages/SawanaGhimire.jpg");
+export const team13 = require("../images/teamImages/SoyabKhan.jpg");
+export const team14 = require("../images/teamImages/ShrijanaPanthi.jpeg");
+export const team15 = require("../images/teamImages/AashaPoudel.jpg");
+
+/* contactUs */
+export const contact = require("../images/contact/office.jpg");
+
+/* documentsRequired */
+export const documentsRequired = require("../images/documentsRequired/documentsRequired.png");

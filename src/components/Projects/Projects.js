@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
+/* Components */
 import Alltypes from "./Alltypes";
 import Residental from "./Residental";
 import Commercial from "./Commercial";
 import Interior from "./Interior";
 
+/* CSS */
 import { MDBContainer, MDBBtn, MDBBtnGroup } from "mdb-react-ui-kit";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./styles.css";
 
 function Projects() {
     const [category, setCategory] = useState("AllTypes");

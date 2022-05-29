@@ -13,7 +13,7 @@ import {
 } from "mdb-react-ui-kit";
 
 /* images */
-import logo from "../images/logo/logo.png";
+import logo from "../../images/logo/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -53,28 +53,28 @@ const Navbar = () => {
                 </MDBNavbarToggler>
                 <MDBCollapse navbar show={showNav}>
                     <MDBNavbarNav>
-                        <MDBNavbarItem>
-                            <Link className='me-3' active aria-current='page' to='/'>
+                        <MDBNavbarItem className='m-2'>
+                            <Link active aria-current='page' to='/'>
                                 <MDBBtn color={!button ? "dark" : "light"}>Home</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <Link className='me-3' to='/projects'>
+                        <MDBNavbarItem className='m-2'>
+                            <Link to='/projects'>
                                 <MDBBtn color={!button ? "dark" : "light"}>Projects</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <Link className='me-3' to='/services'>
+                        <MDBNavbarItem className='m-2'>
+                            <Link to='/services'>
                                 <MDBBtn color={!button ? "dark" : "light"}>Services</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <Link className='me-3' to='about'>
+                        <MDBNavbarItem className='m-2'>
+                            <Link to='/about'>
                                 <MDBBtn color={!button ? "dark" : "light"}>About</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <Link className='me-3' to='/contact'>
+                        <MDBNavbarItem className='m-2'>
+                            <Link to='/contact'>
                                 <MDBBtn color={!button ? "dark" : "light"}>Contact</MDBBtn>
                             </Link>
                         </MDBNavbarItem>

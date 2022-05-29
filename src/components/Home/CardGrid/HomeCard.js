@@ -16,7 +16,7 @@ export default function HomeCard() {
         AOS.init({ duration: 1700 });
     }, []);
     return (
-        <MDBContainer className='mt-3'>
+        <MDBContainer className='mt-3 mb-3'>
             <MDBRow>
                 <MDBCol data-aos='fade-right' size='md' className='col-example'>
                     <div className='bg-image hover-overlay'>
@@ -46,7 +46,9 @@ export default function HomeCard() {
                                     place. Commercial structures include office buildings, retail space, warehouses, and other
                                     structures.
                                 </p>
-                                <MDBBtn className='mt-4'>More Designs</MDBBtn>
+                                <Link to='/projects'>
+                                    <MDBBtn className='mt-4'>More Designs</MDBBtn>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -60,7 +62,9 @@ export default function HomeCard() {
                                     Interior design is the art and science of improving a building's interior to make it healthier
                                     and more aesthetically pleasant for the people who use it.
                                 </p>
-                                <MDBBtn className='mt-4'>More Designs</MDBBtn>
+                                <Link to='/projects'>
+                                    <MDBBtn className='mt-4'>More Designs</MDBBtn>
+                                </Link>
                             </div>
                         </div>
                     </div>

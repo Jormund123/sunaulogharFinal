@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
-import Carousel from "./Carousel/Carousel";
 
 import { MDBContainer } from "mdb-react-ui-kit";
+
+import Carousel from "./Carousel/Carousel";
 import HomeCard from "./CardGrid/HomeCard";
+import ContactHome from "./Contact/ContactHome";
+import Map from "../Contact Us/Map";
+
+import Modal from "./Modal";
 
 const Home = () => {
     useEffect(() => {
@@ -18,6 +23,11 @@ const Home = () => {
                 </header>
             </MDBContainer>
             <HomeCard />
+            <ContactHome />
+
+            {/* Documents Required Download */}
+            <Modal />
+            <Map />
         </>
     );
 };

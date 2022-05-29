@@ -1,0 +1,26 @@
+.about-image1 {
+    background-image: url(../../images/components\ Images/aboutUs.jpg);
+    height: 200px;
+}
+
+/* About Us : Message from the Chairman */
+.border-end {
+    border-bottom: 3px solid #0082e2 !important;
+    border-right: 3px solid #fbb228 !important;
+}
+.border-start {
+    border-top: 3px solid #0082e2 !important;
+    border-left: 3px solid #fbb228 !important;
+}
+
+.border-bottom {
+    border-right: 3px solid #0082e2 !important;
+    border-bottom: 3px solid #fbb228 !important;
+}
+
+/* About us: Why Choose Us */
+.mainContainer {
+    background: linear-gradient(to top, black 75%, white 25%);
+}
+
+/* About Us: Team */

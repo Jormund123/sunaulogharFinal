@@ -39,8 +39,10 @@ const Navbar = () => {
         <MDBNavbar fixed='top' expand='lg' className='shadow-0 text-dark' bgColor={!nav ? "" : "dark"}>
             <MDBContainer fluid>
                 <MDBContainer>
-                    <MDBNavbarBrand to='#'>
-                        <img src={logo} height='35' alt='' loading='lazy' />
+                    <MDBNavbarBrand>
+                        <Link to='/'>
+                            <img src={logo} height='35' alt='' loading='lazy' />
+                        </Link>
                     </MDBNavbarBrand>
                 </MDBContainer>
                 <MDBNavbarToggler
@@ -54,7 +56,7 @@ const Navbar = () => {
                 <MDBCollapse navbar show={showNav}>
                     <MDBNavbarNav>
                         <MDBNavbarItem className='m-2'>
-                            <Link active aria-current='page' to='/'>
+                            <Link className='active' aria-current='page' to='/'>
                                 <MDBBtn color={!button ? "dark" : "light"}>Home</MDBBtn>
                             </Link>
                         </MDBNavbarItem>

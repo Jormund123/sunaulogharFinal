@@ -12,6 +12,8 @@ import {
 } from "mdb-react-ui-kit";
 
 export default function Calculator() {
+    const re = /^[0-9\b]+$/; //for checking if the input is a number
+
     const [basicModal, setBasicModal] = useState(false);
 
     const toggleShow = () => setBasicModal(!basicModal);
@@ -39,57 +41,75 @@ export default function Calculator() {
 
     const handleOnChangeRopani = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 508;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 508;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
 
     const handleOnChangeAana = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 32;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 32;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
     const handleOnChangePaisa = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 8;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 8;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
     const handleOnChangeDaam = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 2;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 2;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
     const handleOnChangeBigaha = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 6772;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 6772;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
     const handleOnChangeKattha = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 338;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 338;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
     const handleOnChangeDhur = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 17;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 17;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
     const handleOnChangeSquareFeet = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 0.093;
-        setSquareMt(meterSquare);
-        meterToEverything(meterSquare);
+        if (input === "" || re.test(input)) {
+            let meterSquare = input * 0.093;
+            setSquareMt(meterSquare);
+            meterToEverything(meterSquare);
+        }
     };
     const handleOnChangeSquareMeter = (event) => {
         let input = event.target.value;
-        setSquareMt(input);
-        meterToEverything(input);
+        if (input === "" || re.test(input)) {
+            setSquareMt(input);
+            meterToEverything(input);
+        }
     };
 
     return (
@@ -116,7 +136,7 @@ export default function Calculator() {
                                             value={ropani}
                                             onChange={handleOnChangeRopani}
                                         />
-                                        <label className style={{ color: "black" }} htmlFor='floatingInput'>
+                                        <label style={{ color: "black" }} htmlFor='floatingInput'>
                                             Ropani (रोपनी)
                                         </label>
                                     </div>

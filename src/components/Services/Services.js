@@ -10,6 +10,7 @@ import services3 from "../../images/services/servicesbackground.jpg";
 
 import AOS from "aos";
 import "./styles.css";
+import Calculator from "./Calculator/Calculator";
 
 function Services() {
     useEffect(() => {
@@ -30,6 +31,8 @@ function Services() {
                 </div>
             </div>
             <MDBContainer>
+                <Calculator />
+                <h2>Types of Services</h2>
                 <div data-aos='fade-up' className='d-flex shadow-2-strong m-4'>
                     <MDBRow className=' pe-2 d-flex justify-content-center align-items-center'>
                         <MDBCol size='md' className=' col-example'>

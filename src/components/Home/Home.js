@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import { MDBContainer } from "mdb-react-ui-kit";
+import { MDBContainer, MDBBtn } from "mdb-react-ui-kit";
 
 import Carousel from "./Carousel/Carousel";
 import HomeCard from "./CardGrid/HomeCard";
@@ -26,7 +26,9 @@ const Home = () => {
             <ContactHome />
 
             {/* Documents Required Download */}
+
             <Modal />
+
             <Map />
         </>
     );

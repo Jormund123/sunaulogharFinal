@@ -20,7 +20,7 @@ export default function Modal() {
 
     return (
         <>
-            <MDBBtn className='mb-4' onClick={toggleShow}>
+            <MDBBtn className='mt-2 mb-4 w-10' onClick={toggleShow}>
                 Documents Required
             </MDBBtn>
             <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>

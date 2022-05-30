@@ -27,56 +27,56 @@ export default function Calculator() {
     const [squareMt, setSquareMt] = useState("");
 
     function meterToEverything(meterSquare) {
-        setRopani(meterSquare / 508.72);
-        setAana(meterSquare / 31.8);
-        setPaisa(meterSquare / 7.95);
-        setDaam(meterSquare / 1.99);
-        setBigaha(meterSquare / 6772.63);
-        setKattha(meterSquare / 338.63);
-        setDhur(meterSquare / 16.93);
+        setRopani(meterSquare / 508);
+        setAana(meterSquare / 32);
+        setPaisa(meterSquare / 8);
+        setDaam(meterSquare / 2);
+        setBigaha(meterSquare / 6772);
+        setKattha(meterSquare / 338);
+        setDhur(meterSquare / 17);
         setSquareft(meterSquare / 0.093);
     }
 
     const handleOnChangeRopani = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 508.72;
+        let meterSquare = input * 508;
         setSquareMt(meterSquare);
         meterToEverything(meterSquare);
     };
 
     const handleOnChangeAana = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 31.8;
+        let meterSquare = input * 32;
         setSquareMt(meterSquare);
         meterToEverything(meterSquare);
     };
     const handleOnChangePaisa = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 7.95;
+        let meterSquare = input * 8;
         setSquareMt(meterSquare);
         meterToEverything(meterSquare);
     };
     const handleOnChangeDaam = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 1.99;
+        let meterSquare = input * 2;
         setSquareMt(meterSquare);
         meterToEverything(meterSquare);
     };
     const handleOnChangeBigaha = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 6772.63;
+        let meterSquare = input * 6772;
         setSquareMt(meterSquare);
         meterToEverything(meterSquare);
     };
     const handleOnChangeKattha = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 338.63;
+        let meterSquare = input * 338;
         setSquareMt(meterSquare);
         meterToEverything(meterSquare);
     };
     const handleOnChangeDhur = (event) => {
         let input = event.target.value;
-        let meterSquare = input * 16.93;
+        let meterSquare = input * 17;
         setSquareMt(meterSquare);
         meterToEverything(meterSquare);
     };

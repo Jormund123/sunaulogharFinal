@@ -1,7 +1,7 @@
 //Readme File\
 NPM Used:
 <br/>
-npx create-react-app sunauloghar <br/>
+npx create-react-app ./ <br/>
 npm init <br/>
 npm i node <br/>
 npm i aos --save <!-- For animations --> <br/>

@@ -41,7 +41,7 @@ const Navbar = () => {
                 <MDBContainer>
                     <MDBNavbarBrand>
                         <Link to='/'>
-                            <img src={logo} height='35' alt='' loading='lazy' />
+                            <img src={logo} height='45' alt='' loading='lazy' />
                         </Link>
                     </MDBNavbarBrand>
                 </MDBContainer>

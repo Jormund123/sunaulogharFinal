@@ -15,11 +15,6 @@ const Home = () => {
     }, []);
     return (
         <>
-            <MDBContainer>
-                <h3 className='slogan' alt=''>
-                    TRUST TO QUALITY
-                </h3>
-            </MDBContainer>
             <Carousel />
             <MDBContainer>
                 <header data-aos='fade-right'>

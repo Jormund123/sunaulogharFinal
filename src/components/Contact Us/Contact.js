@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import Map from "./Map";
-import { MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdb-react-ui-kit";
 
 import "./styles.css";
 import AOS from "aos";
@@ -10,12 +11,43 @@ import "aos/dist/aos.css";
 import { contact } from "../../images/allImages";
 
 function Contact() {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm("service_a7jcgqc", "template_ji03659", form.current, "5GheFttLGV2F30L4g").then(
+            (result) => {
+                setMessage("SENT");
+                setMessageColor("success");
+                setTimeout(() => {
+                    setMessage("SEND MESSAGE");
+                    setMessageColor("dark");
+                }, 2000);
+            },
+            (error) => {
+                console.log(error.text);
+            }
+        );
+        //clearing form after submitting
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
+
+        name.value = "";
+        email.value = "";
+        message.value = "";
+    };
+
     useEffect(() => {
         AOS.init({ duration: 1000 });
     }, []);
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const [message, setMessage] = useState("SEND MESSAGE");
+    const [messageColor, setMessageColor] = useState("black");
+
     return (
         <>
             <div data-aos='fade-down' className='p-5 text-center bg-image bg-image1'>
@@ -40,7 +72,7 @@ function Contact() {
                             <i className='fas fa-mobile-alt'></i>
                         </span>
                         <span>Phone No.</span>
-                        <span className='text'>9812345678</span>
+                        <span className='text'>071-437496</span>
                     </div>
                     <div>
                         <span>
@@ -51,7 +83,7 @@ function Contact() {
                             ></Link>
                         </span>
                         <span>E-mail</span>
-                        <span className='text'>sunauloghar3@gmail.com</span>
+                        <span className='text'>sunauloghar13@gmail.com</span>
                     </div>
                     <div>
                         <span>
@@ -62,7 +94,7 @@ function Contact() {
                             ></Link>
                         </span>
                         <span>Address</span>
-                        <span className='text'>Milanchowk-Butwal- Nepal</span>
+                        <span className='text'>Butwal-9, Rajmarga Chauraha, Nepal</span>
                     </div>
                     <div>
                         <span>
@@ -75,16 +107,38 @@ function Contact() {
                 <MDBRow>
                     <MDBCol size='md' className='col-example'>
                         <MDBContainer>
-                            <form data-aos='fade-up'>
+                            <form ref={form} onSubmit={sendEmail} data-aos='fade-up'>
                                 <div>
-                                    <input type='text' className='form-control' placeholder='First Name' />
-                                    <input type='text' className='form-control' placeholder='Last Name' />
+                                    <input
+                                        type='text'
+                                        id='name'
+                                        name='user_name'
+                                        className='form-control'
+                                        placeholder='Name'
+                                        required
+                                    />
                                 </div>
                                 <div>
-                                    <input type='email' className='form-control' placeholder='E-mail' />
+                                    <input
+                                        type='email'
+                                        id='email'
+                                        name='user_email'
+                                        className='form-control'
+                                        required
+                                        placeholder='E-mail'
+                                    />
                                 </div>
-                                <textarea rows='5' placeholder='Message' className='form-control'></textarea>
-                                <input type='submit' className='send-btn' value='send message' />
+                                <textarea
+                                    name='message'
+                                    id='message'
+                                    rows='5'
+                                    placeholder='Message'
+                                    className='form-control'
+                                    required
+                                ></textarea>
+                                <MDBBtn type='submit' className={`send-btn bg-${messageColor} text-light`}>
+                                    {message}
+                                </MDBBtn>
                             </form>
                         </MDBContainer>
                     </MDBCol>

@@ -55,6 +55,7 @@ function ContactHome() {
                         <span className='text'>Sunday- Friday (9:00 to 17:00)</span>
                     </div>
                 </div>
+                <hr />
             </MDBContainer>
         </>
     );

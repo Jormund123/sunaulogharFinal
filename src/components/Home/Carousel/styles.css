@@ -1,3 +1,6 @@
 .carouselImage {
-    height: 100vh;
+    height: auto;
 }
+/* .carouselInner {
+    height: 100vh;
+} */

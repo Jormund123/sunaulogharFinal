@@ -30,53 +30,53 @@ const Team = () => {
                 <hr />
                 <MDBRow className='m-2'>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team1} name='Er. Rajan Pandey' post='Chairman' />
+                        <CardGrid image={team1} name='Er. Rajan Pandey' post1='Chairman' post2='(Civil)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center '>
-                        <CardGrid image={team2} name='Er. Biraj Pandey' post='Managing Director' />
+                        <CardGrid image={team2} name='Er. Biraj Bista' post1='Managing Director' post2='(Civil/M.Tech)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team3} name='Er. Bikash Panthi' post='Director' />
+                        <CardGrid image={team4} name='Er. Ramesh Panthi' post1='Director' post2='(Civil/M.Tech)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team4} name='Er. Ramesh Panthi' post='Director' />
+                        <CardGrid image={team3} name='Er. Bikash Panthi' post1='Director' post2='(Civil)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team5} name='Mr. Jeevan Neupane ' post='Manager' />
+                        <CardGrid image={team5} name='Mr. Jeevan Neupane ' post1='Manager' post2='' />
                     </MDBCol>
                 </MDBRow>
                 <MDBRow className='m-2'>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team6} name='Er. Deepak Kumar Singh' post='Civil Engineer' />
+                        <CardGrid image={team11} name='Ar. Shankar Chapagain' post1='(B.Arch)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center '>
-                        <CardGrid image={team7} name='Jr. Er. Mamata Panthi' post='Civil Engineer' />
+                        <CardGrid image={team12} name='Ar. Sawana Ghimire' post1='(B.Arch)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team8} name='Jr. Er. Akhlesh Baniya' post='Civil Engineer' />
+                        <CardGrid image={team6} name='Er. Deepak Kumar Singh' post1='(Civil)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team9} name='Jr. Er. Pawan Panthi' post='Civil Engineer' />
+                        <CardGrid image={team13} name='Jr. Er. Soyab Khan' post1='(Civil)' />
                     </MDBCol>
-                    <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team10} name='Mr. Rajesh Acharya' post='Site Supervisor' />
+                    <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center '>
+                        <CardGrid image={team7} name='Jr. Er. Mamata Panthi' post1='(Civil)' />
                     </MDBCol>
                 </MDBRow>
                 <MDBRow className='m-2'>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team11} name='Ar. Shankar Chapagain' post='AR Officer' />
-                    </MDBCol>
-                    <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center '>
-                        <CardGrid image={team12} name='Ar. Sawana Ghimire' post='AR Officer' />
+                        <CardGrid image={team8} name='Jr. Sub. Er. Akhlesh Baniya' post1='(Civil)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team13} name='Jr. Ar. Soyab Khan' post='AR Officer' />
+                        <CardGrid image={team9} name='Jr. Sub. Er. Pawan Panthi' post1='(Civil)' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team14} name='Ms. Shrijana Panthi' post='Account Officer' />
+                        <CardGrid image={team10} name='Mr. Rajesh Acharya' post1='Site Supervisor' />
                     </MDBCol>
                     <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
-                        <CardGrid image={team15} name='Mrs. Aasha Paudel' post='Front Desk Officer' />
+                        <CardGrid image={team14} name='Ms. Shrijana Panthi' post1='Account Officer' />
+                    </MDBCol>
+                    <MDBCol size='md m-2' className='col-example d-flex align-items-center justify-content-center'>
+                        <CardGrid image={team15} name='Mrs. Aasha Paudel' post1='Front Desk Officer' />
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>

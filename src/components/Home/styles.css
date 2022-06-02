@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.slogan {
+    font-size: 13px;
+    position: absolute;
+    top: 50px;
+    left: 48px;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+}

@@ -36,7 +36,7 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackgroundBtn);
 
     return (
-        <MDBNavbar fixed='top' expand='lg' className='shadow-0 text-dark' bgColor={!nav ? "" : "dark"}>
+        <MDBNavbar data-aos='fade-in' fixed='top' expand='lg' className='shadow-0 text-dark' bgColor={!nav ? "" : "dark"}>
             <MDBContainer fluid>
                 <MDBContainer>
                     <MDBNavbarBrand>
@@ -56,27 +56,54 @@ const Navbar = () => {
                 <MDBCollapse navbar show={showNav}>
                     <MDBNavbarNav>
                         <MDBNavbarItem className='m-2'>
-                            <Link className='active' aria-current='page' to='/'>
+                            <Link
+                                className='active'
+                                aria-current='page'
+                                to='/'
+                                onClick={() => {
+                                    if (window.innerWidth <= 992) setShowNav(!showNav);
+                                }}
+                            >
                                 <MDBBtn color={!button ? "dark" : "light"}>Home</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem className='m-2'>
-                            <Link to='/projects'>
+                            <Link
+                                to='/projects'
+                                onClick={() => {
+                                    if (window.innerWidth <= 992) setShowNav(!showNav);
+                                }}
+                            >
                                 <MDBBtn color={!button ? "dark" : "light"}>Projects</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem className='m-2'>
-                            <Link to='/services'>
+                            <Link
+                                to='/services'
+                                onClick={() => {
+                                    if (window.innerWidth <= 992) setShowNav(!showNav);
+                                }}
+                            >
                                 <MDBBtn color={!button ? "dark" : "light"}>Services</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem className='m-2'>
-                            <Link to='/about'>
+                            <Link
+                                to='/about'
+                                onClick={() => {
+                                    if (window.innerWidth <= 992) setShowNav(!showNav);
+                                }}
+                            >
                                 <MDBBtn color={!button ? "dark" : "light"}>About</MDBBtn>
                             </Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem className='m-2'>
-                            <Link to='/contact'>
+                            <Link
+                                to='/contact'
+                                onClick={() => {
+                                    if (window.innerWidth <= 992) setShowNav(!showNav);
+                                }}
+                            >
                                 <MDBBtn color={!button ? "dark" : "light"}>Contact</MDBBtn>
                             </Link>
                         </MDBNavbarItem>

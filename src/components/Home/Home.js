@@ -1,20 +1,25 @@
 import React, { useEffect } from "react";
 
-import { MDBContainer, MDBBtn } from "mdb-react-ui-kit";
+import { MDBContainer } from "mdb-react-ui-kit";
 
 import Carousel from "./Carousel/Carousel";
 import HomeCard from "./CardGrid/HomeCard";
 import ContactHome from "./Contact/ContactHome";
 import Map from "../Contact Us/Map";
 
-import Modal from "./Modal";
-
+import "./styles.css";
+import { Documents } from "./Documents";
 const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     return (
         <>
+            <MDBContainer>
+                <h3 className='slogan' alt=''>
+                    TRUST TO QUALITY
+                </h3>
+            </MDBContainer>
             <Carousel />
             <MDBContainer>
                 <header data-aos='fade-right'>
@@ -25,10 +30,9 @@ const Home = () => {
             <HomeCard />
             <ContactHome />
 
-            {/* Documents Required Download */}
-
-            <Modal />
-
+            <MDBContainer>
+                <Documents />
+            </MDBContainer>
             <Map />
         </>
     );

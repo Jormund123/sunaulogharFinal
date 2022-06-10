@@ -9,15 +9,26 @@ import "aos/dist/aos.css";
 
 /* images */
 import {
-    commercial2,
-    commercial3,
-    commercial4,
-    commercial5,
-    commercial6,
-    commercial7,
-    commercial8,
-    commercial9,
-    commercial10,
+    Commercial11,
+    Commercial2,
+    Commercial3,
+    Commercial4,
+    Commercial5,
+    Commercial6,
+    Commercial7,
+    Commercial8,
+    Commercial9,
+    Commercial10,
+    Commercial12,
+    Commercial13,
+    Commercial14,
+    Commercial15,
+    Commercial16,
+    Commercial17,
+    Commercial18,
+    Commercial19,
+    Commercial20,
+    Commercial1,
 } from "../../images/allImages";
 
 const Commercial = () => {
@@ -26,9 +37,13 @@ const Commercial = () => {
     }, []);
     return (
         <>
-            <CardGrid image1={commercial2} image2={commercial8} image3={commercial5} />
-            <CardGrid image1={commercial3} image2={commercial9} image3={commercial6} />
-            <CardGrid image1={commercial4} image2={commercial10} image3={commercial7} />
+            <CardGrid image1={Commercial2} image2={Commercial20} image3={Commercial5} />
+            <CardGrid image1={Commercial3} image2={Commercial9} image3={Commercial6} />
+            <CardGrid image1={Commercial4} image2={Commercial10} image3={Commercial7} />
+            <CardGrid image1={Commercial11} image2={Commercial14} image3={Commercial17} />
+            <CardGrid image1={Commercial12} image2={Commercial15} image3={Commercial18} />
+            <CardGrid image1={Commercial13} image2={Commercial16} image3={Commercial19} />
+            <CardGrid image1={Commercial1} image2={Commercial8} image3={Commercial2} />
         </>
     );
 };

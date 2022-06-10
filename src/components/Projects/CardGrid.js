@@ -18,17 +18,17 @@ export default function CardGrid(props) {
             <MDBRow>
                 <MDBCol data-aos='fade-right' size='md' className='col-example'>
                     <div className='bg-image hover-overlay'>
-                        <img src={image1} className='img-fluid rounded shadow-3-strong m-2 dimensionsImage ' alt='Sample' />
+                        <img src={image1} className='img-fluid rounded shadow-3-strong m-2 dimensionsImage ' alt='' />
                     </div>
                 </MDBCol>
                 <MDBCol data-aos='fade-right' size='md' className='col-example'>
                     <div className='bg-image hover-overlay'>
-                        <img src={image2} className='dimensionsImage img-fluid rounded shadow-3-strong m-2 ' alt='Sample' />
+                        <img src={image2} className='dimensionsImage img-fluid rounded shadow-3-strong m-2 ' alt='' />
                     </div>
                 </MDBCol>
                 <MDBCol data-aos='fade-right' size='md' className='col-example'>
                     <div className='bg-image hover-overlay'>
-                        <img src={image3} className='dimensionsImage img-fluid rounded shadow-3-strong m-2 ' alt='Sample' />
+                        <img src={image3} className='dimensionsImage img-fluid rounded shadow-3-strong m-2 ' alt='' />
                     </div>
                 </MDBCol>
             </MDBRow>

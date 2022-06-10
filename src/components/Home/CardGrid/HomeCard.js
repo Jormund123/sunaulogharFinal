@@ -6,8 +6,8 @@ import "./styles.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 /* images */
-import residental1 from "../../../images/residental/Residental1.jpeg";
-import commercial1 from "../../../images/commercial/commercial5.jpeg";
+import residental1 from "../../../images/residental/Residential1.jpg";
+import Commercial1 from "../../../images/commercial/Commercial5.jpg";
 import interior1 from "../../../images/interior/Interior1.jpeg";
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ export default function HomeCard() {
                 </MDBCol>
                 <MDBCol data-aos='fade-right' size='md' className='col-example'>
                     <div className='bg-image hover-overlay'>
-                        <img src={commercial1} className='dimensionsImage img-fluid rounded shadow-3-strong m-2 ' alt='Sample' />
+                        <img src={Commercial1} className='dimensionsImage img-fluid rounded shadow-3-strong m-2 ' alt='Sample' />
                         <div className='mask p-4' style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
                             <div className='d-flex flex-column justify-content-center align-items-center h-100'>
                                 <p className='text-white mb-0'>

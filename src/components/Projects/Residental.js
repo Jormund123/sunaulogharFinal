@@ -29,8 +29,8 @@ import {
     residental18,
     residental19,
     residental20,
-    residental21,
     residental22,
+    residental21,
 } from "../../images/allImages";
 
 const Residental = () => {
@@ -44,8 +44,8 @@ const Residental = () => {
             <CardGrid image1={residental4} image2={residental10} image3={residental7} />
             <CardGrid image1={residental11} image2={residental18} image3={residental19} />
             <CardGrid image1={residental12} image2={residental17} image3={residental20} />
-            <CardGrid image1={residental13} image2={residental16} image3={residental21} />
-            <CardGrid image1={residental14} image2={residental15} image3={residental22} />
+            <CardGrid image1={residental13} image2={residental16} image3={residental15} />
+            <CardGrid image1={residental14} image2={residental21} image3={residental22} />
         </>
     );
 };
